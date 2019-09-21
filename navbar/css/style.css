@@ -1,0 +1,111 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+/* Global */
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.rounded, rounded-md {
+    border-radius: 5px;
+}
+
+/* Header */
+header {
+    min-height: 70px;
+    background: #000000;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom: 5px solid  #673AB7;
+}
+
+header #Brand {
+    margin-top: 10px;
+    float: left;
+}
+
+header #Brand img.logo {
+    height: 50px;
+}
+
+header #Brand p.text {
+    margin: 0;
+    margin-left: 10px;
+    padding: 10px;
+    float: right;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header nav {
+    margin-top: 5px;
+}
+
+header nav ul li.nav-item {
+    float: left;
+    display: inline;
+    margin: 0 20px 0 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/*
+header nav ul li.nav-item:hover {
+    transition: border 2.5px solid  #ffffff;
+}
+*/
+
+header nav ul li.nav-item div.nav-link-underline {
+    background: #ffffff;
+    height: 2.5px;
+    width: 0;
+}
+
+header nav ul li.nav-item:hover div.nav-link-underline {
+    width: 100%;
+    transition: width .5as ease-out;
+}
+
+header nav ul li.nav-item.active div.nav-link-underline {
+    width: 100%;
+    background: #673AB7;
+}
+
+header nav ul li.nav-item a.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header nav ul li.nav-item a.nav-link i.material-icons {
+    margin-right: 10px;
+}
+
+header nav ul li.nav-item a.nav-link[role="button"] {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+header nav ul li.nav-item a#SignupButton {
+    padding: 12px;
+    background: #673AB7;
+}
